@@ -1,10 +1,4 @@
-/**
- * Nom du modèle : Personal
- * Mis à jour : 18 septembre 2023 avec Bootstrap v5.3.2
- * URL du modèle : https://bootstrapmade.com/personal-free-resume-bootstrap-template/
- * Auteur : BootstrapMade.com
- * Licence : https://bootstrapmade.com/license/
- */
+
 
 (function() {
   "use strict";
