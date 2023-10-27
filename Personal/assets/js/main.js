@@ -1,15 +1,16 @@
 /**
-* Template Name: Personal
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+ * Nom du modèle : Personal
+ * Mis à jour : 18 septembre 2023 avec Bootstrap v5.3.2
+ * URL du modèle : https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+ * Auteur : BootstrapMade.com
+ * Licence : https://bootstrapmade.com/license/
+ */
+
 (function() {
   "use strict";
 
   /**
-   * Easy selector helper function
+   * Fonction d'aide pour la sélection facile des éléments du DOM
    */
   const select = (el, all = false) => {
     el = el.trim()
@@ -21,7 +22,7 @@
   }
 
   /**
-   * Easy event listener function
+   * Fonction d'écouteur d'événements pour simplifier l'ajout d'événements
    */
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
@@ -36,7 +37,7 @@
   }
 
   /**
-   * Scrolls to an element with header offset
+   * Fait défiler jusqu'à un élément avec un décalage d'en-tête
    */
   const scrollto = (el) => {
     window.scrollTo({
@@ -46,7 +47,7 @@
   }
 
   /**
-   * Mobile nav toggle
+   * Bascule de la navigation mobile
    */
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
@@ -55,7 +56,7 @@
   })
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Fait défiler avec un décalage sur les liens avec la classe .scrollto
    */
   on('click', '#navbar .nav-link', function(e) {
     let section = select(this.hash)
@@ -109,7 +110,7 @@
   }, true)
 
   /**
-   * Activate/show sections on load with hash links
+   * Active/affiche les sections au chargement avec des liens de hachage
    */
   window.addEventListener('load', () => {
     if (window.location.hash) {
@@ -139,7 +140,7 @@
   });
 
   /**
-   * Skills animation
+   * Animation des compétences
    */
   let skilsContent = select('.skills-content');
   if (skilsContent) {
@@ -156,7 +157,7 @@
   }
 
   /**
-   * Testimonials slider
+   * Curseur de témoignages
    */
   new Swiper('.testimonials-slider', {
     speed: 600,
@@ -185,7 +186,7 @@
   });
 
   /**
-   * Porfolio isotope and filter
+   * Isotope de portefeuille et filtre
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
@@ -213,14 +214,14 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initialiser la lightbox du portfolio
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
   });
 
   /**
-   * Initiate portfolio details lightbox 
+   * Initialiser la lightbox des détails du portfolio
    */
   const portfolioDetailsLightbox = GLightbox({
     selector: '.portfolio-details-lightbox',
@@ -229,7 +230,7 @@
   });
 
   /**
-   * Portfolio details slider
+   * Curseur de détails du portfolio
    */
   new Swiper('.portfolio-details-slider', {
     speed: 400,
@@ -246,7 +247,7 @@
   });
 
   /**
-   * Initiate Pure Counter 
+   * Initialiser Pure Counter 
    */
   new PureCounter();
 
