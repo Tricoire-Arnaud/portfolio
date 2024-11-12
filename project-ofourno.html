@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'fourn'O | Arnaud Tricoire - Architecte Digital & Développeur Full Stack</title>
+    
+    <!-- Meta tags -->
+    <meta name="description" content="O'fourn'O - Application web de recettes culinaires. Découvrez ce projet innovant combinant Symfony et React.js">
+    <meta name="keywords" content="ofourno, recettes, application web, symfony, react.js, portfolio">
+    <meta name="author" content="Arnaud Tricoire">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Arnaud Tricoire</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house"></i>
+                            <span>Accueil</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="bi bi-person"></i>
+                            <span>À Propos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">
+                            <i class="bi bi-code-square"></i>
+                            <span>Réalisations</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-8 mx-auto text-center animate-fadeInUp">
+                    <div class="project-badge">
+                        <span class="badge">Web</span>
+                        <span class="badge">Symfony</span>
+                    </div>
+                    <h1 class="project-title">O'fourn'O - Application Web de Recettes Culinaires</h1>
+                    <p class="project-subtitle">Une application web intuitive pour découvrir et gérer vos recettes</p>
+                    <div class="project-quick-info">
+                        <div class="tech-pills">
+                            <span class="tech-pill">Symfony</span>
+                            <span class="tech-pill">React.js</span>
+                            <span class="tech-pill">MySQL</span>
+                            <span class="tech-pill">API REST</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Tricoire-Arnaud/ofourno-back" class="action-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://ofourno.arnaudtricoire.com" class="action-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="project-details-section py-5">
+        <div class="container">
+            <!-- Introduction et Contexte -->
+            <div class="content-section animate-fadeInUp">
+                <h3>Contexte du Projet</h3>
+                <p>O'fourn'O est né lors de ma formation DWWM chez O'clock comme projet de fin d'études. En tant que Lead Dev Back, Product Owner et Scrum Master, j'ai eu l'opportunité de diriger une équipe de 5 développeurs dans la création d'une application web innovante de recettes de cuisine.</p>
+            </div>
+
+            <!-- Galerie et Infos Techniques -->
+            <div class="row g-4 mt-4">
+                <div class="col-lg-8 animate-fadeInUp">
+                    <div class="project-gallery glass-card">
+                        <div class="swiper project-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/portfolio/ofourno/ofourno.png" 
+                                         alt="O'fourn'O Interface" 
+                                         class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/portfolio/ofourno/logo.svg" 
+                                         alt="O'fourn'O Logo" 
+                                         class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 animate-fadeInUp" data-delay="200">
+                    <div class="project-info glass-card">
+                        <div class="tech-stack">
+                            <h3>Technologies</h3>
+                            <span class="tech-badge">Symfony</span>
+                            <span class="tech-badge">React.js</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">API REST</span>
+                            <span class="tech-badge">Bootstrap 5</span>
+                            <span class="tech-badge">Twig</span>
+                        </div>
+                        
+                        <!-- Boutons d'action -->
+                        <div class="project-links mt-4">
+                            <a href="https://github.com/Tricoire-Arnaud/ofourno-back" class="btn btn-outline w-100 mb-3" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Voir sur GitHub</span>
+                            </a>
+                            <a href="https://ofourno.arnaudtricoire.com" class="btn btn-primary w-100" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Voir le Site</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline du Développement -->
+            <div class="project-timeline glass-card animate-fadeInUp mt-5">
+                <h3 class="mb-4">Parcours de Développement</h3>
+                <div class="timeline-wrapper">
+                    <div class="timeline-item glass-card animate-fadeInUp">
+                        <div class="timeline-marker">
+                            <i class="fas fa-lightbulb icon-primary"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Genèse & Leadership</h4>
+                            <p>Description de la phase...</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item glass-card animate-fadeInUp">
+                        <div class="timeline-marker">
+                            <i class="fas fa-tasks icon-primary"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Organisation & Méthodologie</h4>
+                            <p>Description de la phase...</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Architecture & Conception</h4>
+                            <p>Comme Lead Dev Back, j'ai conçu l'architecture du projet sous Symfony 6, en mettant l'accent sur la scalabilité et la maintenabilité. J'ai notamment implémenté une API REST robuste pour la communication avec le front-end React.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Gestion d'Équipe</h4>
+                            <p>La coordination d'une équipe de 5 développeurs a nécessité une communication claire et une répartition efficace des tâches. J'ai mis en place des code reviews régulières et des sessions de pair programming pour maintenir la qualité du code.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Défis Techniques</h4>
+                            <p>Le plus grand défi était de créer un algorithme de recherche de recettes performant basé sur les ingrédients disponibles. J'ai optimisé les requêtes SQL et mis en place un système de cache pour garantir des temps de réponse rapides.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Sécurité & Tests</h4>
+                            <p>Implémentation d'un système d'authentification JWT, gestion des rôles utilisateurs, et mise en place de tests unitaires avec PHPUnit. La sécurité était une priorité absolue pour protéger les données des utilisateurs.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Présentation & Succès</h4>
+                            <p>Le projet a été présenté avec succès devant un jury de professionnels, démontrant non seulement mes compétences techniques mais aussi mes capacités de leadership et de gestion de projet. Cette expérience a validé ma formation DWWM avec les félicitations du jury.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Perspectives d'Évolution</h4>
+                            <p>Suite au succès du projet et aux retours positifs du jury, plusieurs axes d'amélioration ont été identifiés : 
+                            l'optimisation des algorithmes de recherche, l'ajout d'un système de notation communautaire des recettes, 
+                            et l'intégration d'une fonctionnalité de création de liste de courses automatique. Ces évolutions visent à 
+                            enrichir l'expérience utilisateur tout en conservant l'esprit collaboratif et pratique de l'application.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fonctionnalités -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="glass-card animate-fadeInUp">
+                        <h3>Fonctionnalités Clés</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <h4>Recherche Intelligente</h4>
+                                <ul class="feature-list">
+                                    <li><i class="bi bi-check-circle-fill"></i>Recherche par ingrédients disponibles</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Filtres avancés par type de cuisine</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Suggestions personnalisées</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Système de favoris</li>
+                                </ul>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Gestion des Utilisateurs</h4>
+                                <ul class="feature-list">
+                                    <li><i class="bi bi-check-circle-fill"></i>Authentification sécurisée</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Profils personnalisables</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Gestion des rôles</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Back-office administrateur</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision et Futur -->
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="glass-card animate-fadeInUp">
+                        <h3>Vision & Leadership</h3>
+                        <p>En tant que Lead Dev Back et Scrum Master, j'ai mis en place une méthodologie Agile rigoureuse et une architecture technique robuste, permettant à l'équipe de travailler efficacement et de livrer un produit de qualité dans les délais impartis.</p>
+                        <div class="values-list mt-4">
+                            <div class="value-item">
+                                <i class="fas fa-users icon-primary"></i>
+                                <h4>Travail d'Équipe</h4>
+                                <p>Coordination et communication efficace</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-tasks icon-primary"></i>
+                                <h4>Méthodologie Agile</h4>
+                                <p>Sprints et daily meetings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="glass-card animate-fadeInUp" data-delay="200">
+                        <h3>Perspectives d'Évolution</h3>
+                        <div class="future-goals">
+                            <div class="goal-item">
+                                <i class="fas fa-search icon-primary"></i>
+                                <h4>Optimisation</h4>
+                                <p>Amélioration des algorithmes de recherche</p>
+                            </div>
+                            <div class="goal-item">
+                                <i class="fas fa-star icon-primary"></i>
+                                <h4>Système de Notation</h4>
+                                <p>Évaluation communautaire des recettes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-card">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="footer-brand">
+                        <h3 class="neon-text">Arnaud Tricoire</h3>
+                        <p>Architecte Digital & Développeur Full Stack</p>
+                        <p class="footer-tagline">Transformant vos idées en réalités digitales</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-social">
+                        <a href="https://github.com/Tricoire-Arnaud" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/arnaud-tricoire/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-contact">
+                        <a href="mailto:Arnaud.tricoire@hotmail.com" class="contact-link">
+                            <i class="bi bi-envelope"></i>
+                            <span>Arnaud.tricoire@hotmail.com</span>
+                        </a>
+                        <p class="footer-availability">Disponible pour de nouveaux projets passionnants</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Arnaud Tricoire. Créé avec passion en Avignon.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

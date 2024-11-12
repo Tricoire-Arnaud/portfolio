@@ -1,0 +1,28 @@
+:root {
+    /* Couleurs */
+    --bg-primary: #0A0A0B;
+    --bg-secondary: #111214;
+    --accent-primary: #00FFB2;
+    --accent-secondary: #4D5BCE;
+    --text-primary: #FFFFFF;
+    --text-secondary: #8F9BA8;
+    
+    /* Effets */
+    --neon-glow: 0 0 10px rgba(0, 255, 178, 0.5);
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.05);
+    --card-bg: rgba(16, 18, 27, 0.4);
+    
+    /* Gradients */
+    --gradient-neon: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    --shadow-neon: 0 0 20px rgba(0, 255, 178, 0.2);
+    
+    /* Layout */
+    --border-radius: 16px;
+    --section-spacing: 6rem;
+    --content-spacing: 2rem;
+    --header-height: 76px;
+    
+    /* Transitions */
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+} 

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | Arnaud Tricoire - Architecte Digital & Développeur Full Stack</title>
+    
+    <!-- Meta tags -->
+    <meta name="description" content="Découvrez mes projets de développement web - Applications innovantes et sites web modernes">
+    <meta name="keywords" content="projets web, portfolio, développeur full stack, symfony, javascript, applications web">
+    <meta name="author" content="Arnaud Tricoire">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Arnaud Tricoire</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house"></i>
+                            <span>Accueil</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="bi bi-person"></i>
+                            <span>À Propos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">
+                            <i class="bi bi-code-square"></i>
+                            <span>Réalisations</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="projects-hero-content text-center animate-fadeInUp">
+                <div class="project-badge">
+                    <span class="badge">Portfolio</span>
+                </div>
+                <h1 class="project-title">Mes Réalisations</h1>
+                <p class="project-subtitle">Découvrez une sélection de projets innovants illustrant mon expertise en développement web</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="projects-section py-5">
+        <div class="container">
+            <div class="filters-container mb-5">
+                <div class="filters-group animate-fadeInUp glass-card">
+                    <button type="button" class="btn btn-filter active" data-filter="all">
+                        <i class="bi bi-grid-3x3-gap"></i>
+                        <span>Tous</span>
+                    </button>
+                    <button type="button" class="btn btn-filter" data-filter="web">
+                        <i class="fas fa-globe"></i>
+                        <span>Web</span>
+                    </button>
+                    <button type="button" class="btn btn-filter" data-filter="app">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Application</span>
+                    </button>
+                    <button type="button" class="btn btn-filter" data-filter="symfony">
+                        <i class="fab fa-symfony"></i>
+                        <span>Symfony</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Les projets seront injectés ici par projects.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-card">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="footer-brand">
+                        <h3 class="neon-text">Arnaud Tricoire</h3>
+                        <p>Architecte Digital & Développeur Full Stack</p>
+                        <p class="footer-tagline">Transformant vos idées en réalités digitales</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-social">
+                        <a href="https://github.com/Tricoire-Arnaud" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/arnaud-tricoire/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-contact">
+                        <a href="mailto:Arnaud.tricoire@hotmail.com" class="contact-link">
+                            <i class="bi bi-envelope"></i>
+                            <span>Arnaud.tricoire@hotmail.com</span>
+                        </a>
+                        <p class="footer-availability">Disponible pour de nouveaux projets passionnants</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Arnaud Tricoire. Créé avec passion en Avignon.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html> 
