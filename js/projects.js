@@ -209,7 +209,7 @@ function displayProjects() {
 
 function initializeFilters() {
     const filterButtons = document.querySelectorAll('.btn-filter');
-    const projectItems = document.querySelectorAll('.col-lg-4');
+    const projectItems = document.querySelectorAll('.col-12');
 
     for (const button of filterButtons) {
         button.addEventListener('click', () => {

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Animation des sections au scroll
   const observerCallback = (entries) => {
-    entries.forEach(entry => {
+    for (const entry of entries) {
       if (entry.isIntersecting) {
         if (entry.target.classList.contains('timeline-item')) {
           // Pour les éléments de la timeline, ajouter un délai progressif
@@ -26,29 +26,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         entry.target.classList.add('show');
       }
-    });
+    }
   };
 
   const observer = new IntersectionObserver(observerCallback, {
     threshold: 0.2,
     rootMargin: "0px 0px -50px 0px",
   });
-
   // Observer les éléments de la timeline
-  document.querySelectorAll('.timeline-item').forEach(item => {
+  for (const item of document.querySelectorAll('.timeline-item')) {
     item.style.opacity = '0';
     item.style.transform = 'translateX(-20px)';
     observer.observe(item);
-  });
-
+  }
   // Observer les éléments avec animation fadeInUp
-  document.querySelectorAll('.animate-fadeInUp').forEach(item => {
+  for (const item of document.querySelectorAll('.animate-fadeInUp')) {
     observer.observe(item);
-  });
+  }
 
   // Animation du scroll doux pour les ancres
-  const anchors = document.querySelectorAll('a[href^="#"]');
-  for (const anchor of anchors) {
+  for (const anchor of document.querySelectorAll('a[href^="#"]')) {
     anchor.addEventListener("click", (e) => {
       e.preventDefault();
       const targetId = anchor.getAttribute("href");

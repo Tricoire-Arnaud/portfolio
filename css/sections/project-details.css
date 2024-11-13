@@ -531,3 +531,56 @@
 .feature-item:last-child {
     margin-bottom: 0;
 }
+
+/* Ajoutez ces styles pour la grille des fonctionnalités */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    transition: var(--transition);
+}
+
+.feature-item:hover {
+    background: rgba(0, 255, 178, 0.05);
+    transform: translateX(5px);
+}
+
+/* Styles pour la section technique */
+.tech-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.tech-item:hover {
+    background: rgba(0, 255, 178, 0.05);
+    transform: translateX(5px);
+}
+
+.tech-item i {
+    font-size: 1.5rem;
+    color: var(--accent-primary);
+}
