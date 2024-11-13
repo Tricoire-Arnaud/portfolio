@@ -15,13 +15,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Animation des sections et de la timeline au scroll
+  // Animation des sections au scroll
   const observerCallback = (entries) => {
-    for (const entry of entries) {
+    entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("show");
+        if (entry.target.classList.contains('timeline-item')) {
+          // Pour les éléments de la timeline, ajouter un délai progressif
+          const delay = Array.from(document.querySelectorAll('.timeline-item')).indexOf(entry.target) * 200;
+          entry.target.style.transitionDelay = `${delay}ms`;
+        }
+        entry.target.classList.add('show');
       }
-    }
+    });
   };
 
   const observer = new IntersectionObserver(observerCallback, {
@@ -29,20 +34,17 @@ document.addEventListener("DOMContentLoaded", () => {
     rootMargin: "0px 0px -50px 0px",
   });
 
-  // Observer les éléments avec animation
-  const animatedElements = document.querySelectorAll(
-    ".animate-fadeInUp, .skill-progress-bar, .timeline-item"
-  );
-  for (const element of animatedElements) {
-    observer.observe(element);
-  }
+  // Observer les éléments de la timeline
+  document.querySelectorAll('.timeline-item').forEach(item => {
+    item.style.opacity = '0';
+    item.style.transform = 'translateX(-20px)';
+    observer.observe(item);
+  });
 
-  // Ajouter des délais pour les éléments de la timeline
-  const timelineItems = document.querySelectorAll(".timeline-item");
-  for (const item of timelineItems) {
-    const delay = Array.from(timelineItems).indexOf(item) * 200;
-    item.style.transitionDelay = `${delay}ms`;
-  }
+  // Observer les éléments avec animation fadeInUp
+  document.querySelectorAll('.animate-fadeInUp').forEach(item => {
+    observer.observe(item);
+  });
 
   // Animation du scroll doux pour les ancres
   const anchors = document.querySelectorAll('a[href^="#"]');
@@ -77,27 +79,4 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   }
-
-  // Animation de la timeline des projets
-  const timelineObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        // Ajouter un délai progressif pour chaque élément
-        const delay = Array.from(document.querySelectorAll('.timeline-item')).indexOf(entry.target) * 200;
-        entry.target.style.transitionDelay = `${delay}ms`;
-        entry.target.classList.add('show');
-      }
-    });
-  }, {
-    threshold: 0.1,
-    rootMargin: '-50px'
-  });
-
-  // Observer chaque élément de la timeline
-  document.querySelectorAll('.timeline-item').forEach((item) => {
-    // Réinitialiser l'état initial
-    item.style.opacity = '0';
-    item.style.transform = 'translateX(-20px)';
-    timelineObserver.observe(item);
-  });
 });
