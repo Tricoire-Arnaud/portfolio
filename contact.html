@@ -70,117 +70,127 @@
     </div>
 
     <section class="contact-section">
-        <div class="contact-container">
-            <!-- Informations de contact -->
-            <div class="contact-info animate-fadeInUp">
-                <h2 class="contact-info-title">
-                    <span class="gradient-text">Restons connectés</span>
-                </h2>
-                
-                <div class="contact-cards">
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="bi bi-geo-alt-fill"></i>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-12">
+                    <div class="contact-info animate-fadeInUp">
+                        <h2 class="contact-info-title">
+                            <span class="gradient-text">Restons connectés</span>
+                        </h2>
+                        
+                        <div class="contact-cards">
+                            <div class="row g-3">
+                                <div class="col-lg-12 col-md-6">
+                                    <div class="contact-card">
+                                        <div class="contact-card-icon">
+                                            <i class="bi bi-geo-alt-fill"></i>
+                                        </div>
+                                        <div class="contact-card-content">
+                                            <h3>Localisation</h3>
+                                            <p>Avignon, France</p>
+                                            <span class="card-detail">Disponible pour du travail en présentiel et remote</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-6">
+                                    <div class="contact-card">
+                                        <div class="contact-card-icon">
+                                            <i class="bi bi-envelope-fill"></i>
+                                        </div>
+                                        <div class="contact-card-content">
+                                            <h3>Email</h3>
+                                            <p>Arnaud.tricoire@hotmail.com</p>
+                                            <span class="card-detail">Réponse sous 24-48h</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-6">
+                                    <div class="contact-card">
+                                        <div class="contact-card-icon">
+                                            <i class="bi bi-phone-fill"></i>
+                                        </div>
+                                        <div class="contact-card-content">
+                                            <h3>Téléphone</h3>
+                                            <p>+33 6 22 82 84 49</p>
+                                            <span class="card-detail">Du lundi au vendredi, 9h-18h</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="contact-card-content">
-                            <h3>Localisation</h3>
-                            <p>Avignon, France</p>
-                            <span class="card-detail">Disponible pour du travail en présentiel et remote</span>
-                        </div>
-                    </div>
 
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="bi bi-envelope-fill"></i>
+                        <div class="availability-status">
+                            <div class="status-indicator"></div>
+                            <p>Actuellement disponible pour de nouveaux projets</p>
                         </div>
-                        <div class="contact-card-content">
-                            <h3>Email</h3>
-                            <p>Arnaud.tricoire@hotmail.com</p>
-                            <span class="card-detail">Réponse sous 24-48h</span>
-                        </div>
-                    </div>
 
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="bi bi-phone-fill"></i>
-                        </div>
-                        <div class="contact-card-content">
-                            <h3>Téléphone</h3>
-                            <p>+33 6 22 82 84 49</p>
-                            <span class="card-detail">Du lundi au vendredi, 9h-18h</span>
+                        <div class="social-links">
+                            <a href="https://github.com/Tricoire-Arnaud" class="social-link" target="_blank" title="Voir mes projets sur GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/arnaud-tricoire/" class="social-link" target="_blank" title="Me retrouver sur LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="availability-status">
-                    <div class="status-indicator"></div>
-                    <p>Actuellement disponible pour de nouveaux projets</p>
-                </div>
-
-                <div class="social-links">
-                    <a href="https://github.com/Tricoire-Arnaud" class="social-link" target="_blank" title="Voir mes projets sur GitHub">
-                        <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/arnaud-tricoire/" class="social-link" target="_blank" title="Me retrouver sur LinkedIn">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Formulaire de contact -->
-            <div class="contact-form-container animate-fadeInUp" data-delay="200">
-                <div class="form-header">
-                    <h2 class="form-title">Parlons de votre projet</h2>
-                    <p class="form-subtitle">Je vous répondrai dans les plus brefs délais</p>
-                </div>
-                
-                <div class="success-message" id="successMessage">
-                    <i class="bi bi-check-circle-fill success-icon"></i>
-                    <div class="success-content">
-                        <h4>Message envoyé avec succès !</h4>
-                        <p>Je vous recontacterai très prochainement</p>
-                    </div>
-                </div>
-
-                <form action="https://formspree.io/f/meoqkloa" method="POST" class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <div class="input-wrapper">
-                            <input type="text" class="form-control" id="name" name="name" required>
-                            <label class="form-label" for="name">Nom complet</label>
-                            <div class="input-focus-border"></div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="contact-form-container animate-fadeInUp">
+                        <div class="form-header">
+                            <h2 class="form-title">Parlons de votre projet</h2>
+                            <p class="form-subtitle">Je vous répondrai dans les plus brefs délais</p>
                         </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="input-wrapper">
-                            <input type="email" class="form-control" id="email" name="email" required>
-                            <label class="form-label" for="email">Email</label>
-                            <div class="input-focus-border"></div>
+                        
+                        <div class="success-message" id="successMessage">
+                            <i class="bi bi-check-circle-fill success-icon"></i>
+                            <div class="success-content">
+                                <h4>Message envoyé avec succès !</h4>
+                                <p>Je vous recontacterai très prochainement</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <div class="input-wrapper">
-                            <input type="text" class="form-control" id="subject" name="subject" required>
-                            <label class="form-label" for="subject">Sujet</label>
-                            <div class="input-focus-border"></div>
-                        </div>
-                    </div>
+                        <form action="https://formspree.io/f/meoqkloa" method="POST" class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                    <label class="form-label" for="name">Nom complet</label>
+                                    <div class="input-focus-border"></div>
+                                </div>
+                            </div>
 
-                    <div class="form-group">
-                        <div class="input-wrapper">
-                            <textarea class="form-control" id="message" name="message" required></textarea>
-                            <label class="form-label" for="message">Message</label>
-                            <div class="input-focus-border"></div>
-                        </div>
-                    </div>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <label class="form-label" for="email">Email</label>
+                                    <div class="input-focus-border"></div>
+                                </div>
+                            </div>
 
-                    <button type="submit" class="submit-btn">
-                        <span>Envoyer le message</span>
-                        <i class="bi bi-send-fill"></i>
-                        <div class="btn-loader"></div>
-                    </button>
-                </form>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="text" class="form-control" id="subject" name="subject" required>
+                                    <label class="form-label" for="subject">Sujet</label>
+                                    <div class="input-focus-border"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <textarea class="form-control" id="message" name="message" required></textarea>
+                                    <label class="form-label" for="message">Message</label>
+                                    <div class="input-focus-border"></div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="submit-btn">
+                                <span>Envoyer le message</span>
+                                <i class="bi bi-send-fill"></i>
+                                <div class="btn-loader"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -66,7 +66,7 @@
     margin-bottom: 3rem;
 }
 
-/* Metrics Cards */
+/* Hero Metrics */
 .hero-metrics {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -270,7 +270,7 @@
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: var(--content-spacing);
 }
@@ -386,58 +386,54 @@
     color: var(--accent-primary);
 }
 
-/* Responsive Design */
-@media (max-width: 991px) {
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: var(--content-spacing);
+}
+
+/* Tech Stack Grid */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: var(--content-spacing);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .hero-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
     .hero-metrics {
         grid-template-columns: repeat(2, 1fr);
     }
-    
-    .hero-cta {
-        flex-direction: column;
-    }
 
-    .hero-section {
-        padding: calc(var(--section-spacing) / 2) 0;
-    }
-
-    .services-section,
-    .tech-stack-section {
-        padding: calc(var(--section-spacing) / 1.5) 0;
-        margin-top: calc(var(--section-spacing) / 1.5);
-    }
-
-    .hero-content {
-        padding-right: 1rem;
-        margin-bottom: 3rem;
-    }
-
-    .profile-showcase {
-        margin-left: 0;
-        padding: 1rem;
+    .services-grid,
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .hero-metrics {
         grid-template-columns: 1fr;
     }
-    
+
     .services-grid,
     .tech-grid {
         grid-template-columns: 1fr;
     }
-    
-    .tech-items {
-        grid-template-columns: repeat(2, 1fr);
+
+    .hero-title {
+        font-size: 2rem;
     }
 
-    .services-section,
-    .tech-stack-section {
-        padding: calc(var(--section-spacing) / 2) 0;
-        margin-top: calc(var(--section-spacing) / 2);
-    }
-
-    .hero-section {
-        padding-top: calc(var(--section-spacing) / 2);
+    .hero-description {
+        font-size: 1rem;
     }
 }

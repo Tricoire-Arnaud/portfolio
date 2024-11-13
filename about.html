@@ -68,8 +68,8 @@
 
     <div class="hero-section">
         <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6 hero-content">
+            <div class="row align-items-center min-vh-100 gy-5">
+                <div class="col-lg-6 col-md-12 hero-content order-2 order-lg-1">
                     <div class="hero-badge animate-up">
                         <span class="badge-pulse"></span>
                         <span>Mon Parcours</span>
@@ -89,38 +89,48 @@
                     </p>
 
                     <div class="personal-info-grid animate-up" data-delay="600">
-                        <div class="info-card glass-card">
-                            <i class="bi bi-calendar-event neon-icon"></i>
-                            <div class="info-content">
-                                <h4>Âge</h4>
-                                <p>32 ans</p>
+                        <div class="row g-3">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="info-card glass-card">
+                                    <i class="bi bi-calendar-event neon-icon"></i>
+                                    <div class="info-content">
+                                        <h4>Âge</h4>
+                                        <p>32 ans</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-card glass-card">
-                            <i class="bi bi-geo-alt neon-icon"></i>
-                            <div class="info-content">
-                                <h4>Localisation</h4>
-                                <p>Avignon, France</p>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="info-card glass-card">
+                                    <i class="bi bi-geo-alt neon-icon"></i>
+                                    <div class="info-content">
+                                        <h4>Localisation</h4>
+                                        <p>Avignon, France</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-card glass-card info-card-email">
-                            <i class="bi bi-envelope neon-icon"></i>
-                            <div class="info-content">
-                                <h4>Email</h4>
-                                <p class="email-text">Arnaud.tricoire@hotmail.com</p>
+                            <div class="col-12">
+                                <div class="info-card glass-card info-card-email">
+                                    <i class="bi bi-envelope neon-icon"></i>
+                                    <div class="info-content">
+                                        <h4>Email</h4>
+                                        <p class="email-text">Arnaud.tricoire@hotmail.com</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-card glass-card">
-                            <i class="bi bi-phone neon-icon"></i>
-                            <div class="info-content">
-                                <h4>Téléphone</h4>
-                                <p>+33 6 22 82 84 49</p>
+                            <div class="col-12">
+                                <div class="info-card glass-card">
+                                    <i class="bi bi-phone neon-icon"></i>
+                                    <div class="info-content">
+                                        <h4>Téléphone</h4>
+                                        <p>+33 6 22 82 84 49</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6 hero-visual">
+                <div class="col-lg-6 col-md-12 hero-visual order-1 order-lg-2">
                     <div class="profile-showcase animate-up" data-delay="300">
                         <div class="profile-card">
                             <div class="profile-image">
@@ -147,61 +157,66 @@
     <section class="expertise-section">
         <div class="container">
             <h2 class="section-title text-center">Mon Savoir-Faire</h2>
-            <div class="expertise-grid">
+            <div class="row g-4">
                 <!-- Front-end -->
-                <div class="expertise-card glass-card animate-fadeInUp">
-                    <div class="card-icon">
-                        <i class="bi bi-code-slash"></i>
-                    </div>
-                    <h3>Front-end Créatif</h3>
-                    <p>Création d'interfaces utilisateur modernes et immersives, alliant design et fonctionnalité pour
-                        offrir des expériences engageantes.</p>
-                    <div class="tech-stack">
-                        <span class="tech-badge">HTML5</span>
-                        <span class="tech-badge">CSS3</span>
-                        <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">Bootstrap</span>
-                        <span class="tech-badge">React.js</span>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="expertise-card glass-card animate-fadeInUp">
+                        <div class="card-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h3>Front-end Créatif</h3>
+                        <p>Création d'interfaces utilisateur modernes et immersives, alliant design et fonctionnalité pour
+                            offrir des expériences engageantes.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Bootstrap</span>
+                            <span class="tech-badge">React.js</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Back-end -->
-                <div class="expertise-card glass-card animate-fadeInUp" data-delay="200">
-                    <div class="card-icon">
-                        <i class="bi bi-database"></i>
-                    </div>
-                    <h3>Back-end Robuste</h3>
-                    <p>Conception et développement de systèmes fiables et sécurisés, capables de gérer des applications
-                        performantes et évolutives.</p>
-                    <div class="tech-stack">
-                        <span class="tech-badge">PHP/Symfony</span>
-                        <span class="tech-badge">Node.js</span>
-                        <span class="tech-badge">MySQL</span>
-                        <span class="tech-badge">API REST</span>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="expertise-card glass-card animate-fadeInUp" data-delay="200">
+                        <div class="card-icon">
+                            <i class="bi bi-database"></i>
+                        </div>
+                        <h3>Back-end Robuste</h3>
+                        <p>Conception et développement de systèmes fiables et sécurisés, capables de gérer des applications
+                            performantes et évolutives.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">PHP/Symfony</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">API REST</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Méthodologie -->
-
-                        <div class="expertise-card glass-card animate-fadeInUp" data-delay="400">
-                            <div class="card-icon">
-                                <i class="bi bi-gear"></i>
-                            </div>
-                            <h3>Méthodologie Agile</h3>
-                            <p>Adopter une approche agile signifie rester flexible, collaboratif et centré sur
-                                l'utilisateur. Tout au long de ma carrière, j'ai appris que l'adaptabilité est
-                                essentielle pour naviguer dans un monde technologique en constante évolution. En
-                                travaillant avec des équipes pluridisciplinaires, j'ai intégré des pratiques de gestion
-                                de projet qui encouragent l'efficacité et l'innovation continue.</p>
-                            <div class="tech-stack">
-                                <span class="tech-badge">Git</span>
-                                <span class="tech-badge">Docker</span>
-                                <span class="tech-badge">Agile</span>
-                                <span class="tech-badge">VS Code</span>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="expertise-card glass-card animate-fadeInUp" data-delay="400">
+                        <div class="card-icon">
+                            <i class="bi bi-gear"></i>
                         </div>
+                        <h3>Méthodologie Agile</h3>
+                        <p>Adopter une approche agile signifie rester flexible, collaboratif et centré sur
+                            l'utilisateur. Tout au long de ma carrière, j'ai appris que l'adaptabilité est
+                            essentielle pour naviguer dans un monde technologique en constante évolution. En
+                            travaillant avec des équipes pluridisciplinaires, j'ai intégré des pratiques de gestion
+                            de projet qui encouragent l'efficacité et l'innovation continue.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Git</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Agile</span>
+                            <span class="tech-badge">VS Code</span>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Section Soft Skills -->
@@ -218,64 +233,76 @@
                 </p>
             </div>
 
-            <div class="soft-skills-grid">
-                <div class="skill-card glass-card animate-fadeInUp">
-                    <div class="skill-icon">
-                        <i class="bi bi-stars"></i>
-                    </div>
-                    <div class="skill-content">
-                        <h4>Résolution de Problèmes</h4>
-                        <p>Analyser des situations complexes, poser un diagnostic précis et trouver des solutions innovantes est au cœur de ma méthodologie. Chaque projet est pour moi un puzzle à assembler avec soin.</p>
-                    </div>
-                </div>
-
-                <div class="skill-card glass-card animate-fadeInUp" data-delay="100">
-                    <div class="skill-icon">
-                        <i class="bi bi-people-fill"></i>
-                    </div>
-                    <div class="skill-content">
-                        <h4>Travail d'Équipe</h4>
-                        <p>J'apprécie la force de la collaboration et de la communication. Travailler avec des équipes pluridisciplinaires m'a appris l'importance d'une coordination efficace pour atteindre des objectifs communs.</p>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="skill-card glass-card animate-fadeInUp">
+                        <div class="skill-icon">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <div class="skill-content">
+                            <h4>Résolution de Problèmes</h4>
+                            <p>Analyser des situations complexes, poser un diagnostic précis et trouver des solutions innovantes est au cœur de ma méthodologie. Chaque projet est pour moi un puzzle à assembler avec soin.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-card glass-card animate-fadeInUp" data-delay="200">
-                    <div class="skill-icon">
-                        <i class="bi bi-arrow-repeat"></i>
-                    </div>
-                    <div class="skill-content">
-                        <h4>Adaptabilité</h4>
-                        <p>Dans un environnement technologique en perpétuel changement, être adaptable n'est pas un choix, mais une nécessité. Je m'efforce de rester à la pointe des nouvelles pratiques pour évoluer rapidement.</p>
-                    </div>
-                </div>
-
-                <div class="skill-card glass-card animate-fadeInUp" data-delay="300">
-                    <div class="skill-icon">
-                        <i class="bi bi-calendar-check"></i>
-                    </div>
-                    <div class="skill-content">
-                        <h4>Gestion du Temps</h4>
-                        <p>La gestion efficace du temps et la capacité à respecter les délais sont des aspects essentiels de la réussite d'un projet. Je planifie minutieusement chaque étape pour assurer une exécution fluide.</p>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="skill-card glass-card animate-fadeInUp" data-delay="100">
+                        <div class="skill-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <div class="skill-content">
+                            <h4>Travail d'Équipe</h4>
+                            <p>J'apprécie la force de la collaboration et de la communication. Travailler avec des équipes pluridisciplinaires m'a appris l'importance d'une coordination efficace pour atteindre des objectifs communs.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-card glass-card animate-fadeInUp" data-delay="400">
-                    <div class="skill-icon">
-                        <i class="bi bi-graph-up-arrow"></i>
-                    </div>
-                    <div class="skill-content">
-                        <h4>Apprentissage Continu</h4>
-                        <p>Ma passion pour la technologie me pousse à toujours vouloir en apprendre davantage. Que ce soit à travers des formations, des tutoriels ou des projets personnels, je m'efforce de rester informé et compétent.</p>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="skill-card glass-card animate-fadeInUp" data-delay="200">
+                        <div class="skill-icon">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </div>
+                        <div class="skill-content">
+                            <h4>Adaptabilité</h4>
+                            <p>Dans un environnement technologique en perpétuel changement, être adaptable n'est pas un choix, mais une nécessité. Je m'efforce de rester à la pointe des nouvelles pratiques pour évoluer rapidement.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-card glass-card animate-fadeInUp" data-delay="500">
-                    <div class="skill-icon">
-                        <i class="bi bi-chat-dots-fill"></i>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="skill-card glass-card animate-fadeInUp" data-delay="300">
+                        <div class="skill-icon">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <div class="skill-content">
+                            <h4>Gestion du Temps</h4>
+                            <p>La gestion efficace du temps et la capacité à respecter les délais sont des aspects essentiels de la réussite d'un projet. Je planifie minutieusement chaque étape pour assurer une exécution fluide.</p>
+                        </div>
                     </div>
-                    <div class="skill-content">
-                        <h4>Communication</h4>
-                        <p>Exprimer clairement ses idées et savoir écouter sont des qualités que j'estime tout autant que la maîtrise des langages de programmation. J'accorde une grande importance à la transparence et à la compréhension mutuelle.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="skill-card glass-card animate-fadeInUp" data-delay="400">
+                        <div class="skill-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <div class="skill-content">
+                            <h4>Apprentissage Continu</h4>
+                            <p>Ma passion pour la technologie me pousse à toujours vouloir en apprendre davantage. Que ce soit à travers des formations, des tutoriels ou des projets personnels, je m'efforce de rester informé et compétent.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="skill-card glass-card animate-fadeInUp" data-delay="500">
+                        <div class="skill-icon">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </div>
+                        <div class="skill-content">
+                            <h4>Communication</h4>
+                            <p>Exprimer clairement ses idées et savoir écouter sont des qualités que j'estime tout autant que la maîtrise des langages de programmation. J'accorde une grande importance à la transparence et à la compréhension mutuelle.</p>
+                        </div>
                     </div>
                 </div>
             </div>

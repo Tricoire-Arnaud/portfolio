@@ -161,34 +161,42 @@ function displayProjects() {
 
     for (const project of Object.values(projects)) {
         const projectHTML = `
-            <div class="project-item glass-card animate-fadeInUp" data-category="${project.categories.join(' ')}">
-                <div class="project-image">
-                    <img src="images/portfolio/${project.images[0]}" 
-                         alt="${project.title}" 
-                         class="img-fluid">
-                    <div class="project-overlay">
-                        <div class="project-actions">
-                            <a href="${project.detailUrl}" class="btn btn-primary">
-                                <i class="bi bi-eye"></i>
-                                <span>Détails</span>
-                            </a>
-                            <a href="${project.github}" class="btn btn-outline" target="_blank">
-                                <i class="bi bi-github"></i>
-                                <span>GitHub</span>
-                            </a>
+            <div class="col-12">
+                <div class="project-item glass-card animate-fadeInUp" data-category="${project.categories.join(' ')}">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="project-image">
+                                <img src="images/portfolio/${project.images[0]}" 
+                                     alt="${project.title}" 
+                                     class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-actions">
+                                        <a href="${project.detailUrl}" class="btn btn-primary">
+                                            <i class="bi bi-eye"></i>
+                                            <span>Détails</span>
+                                        </a>
+                                        <a href="${project.github}" class="btn btn-outline" target="_blank">
+                                            <i class="bi bi-github"></i>
+                                            <span>GitHub</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">${project.title}</h3>
-                    <p class="project-description">${project.subtitle}</p>
-                    <div class="project-tech">
-                        ${project.technologies.slice(0, 4).map(tech => 
-                            `<span class="tech-badge">${tech}</span>`
-                        ).join('')}
-                        ${project.technologies.length > 4 ? 
-                            `<span class="tech-badge">+${project.technologies.length - 4}</span>` : 
-                            ''}
+                        <div class="col-lg-6">
+                            <div class="project-content">
+                                <h3 class="project-title">${project.title}</h3>
+                                <p class="project-description">${project.subtitle}</p>
+                                <div class="project-tech">
+                                    ${project.technologies.slice(0, 4).map(tech => 
+                                        `<span class="tech-badge">${tech}</span>`
+                                    ).join('')}
+                                    ${project.technologies.length > 4 ? 
+                                        `<span class="tech-badge">+${project.technologies.length - 4}</span>` : 
+                                        ''}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -201,7 +209,7 @@ function displayProjects() {
 
 function initializeFilters() {
     const filterButtons = document.querySelectorAll('.btn-filter');
-    const projectItems = document.querySelectorAll('.project-item');
+    const projectItems = document.querySelectorAll('.col-lg-4');
 
     for (const button of filterButtons) {
         button.addEventListener('click', () => {
@@ -215,13 +223,15 @@ function initializeFilters() {
 
             // Filtrage des projets
             for (const item of projectItems) {
-                const categories = item.getAttribute('data-category').split(' ');
+                const projectCard = item.querySelector('.project-item');
+                const categories = projectCard.getAttribute('data-category').split(' ');
+                
                 if (filterValue === 'all' || categories.includes(filterValue)) {
                     item.style.display = 'block';
-                    item.classList.add('animate-fadeInUp');
+                    projectCard.classList.add('animate-fadeInUp');
                 } else {
                     item.style.display = 'none';
-                    item.classList.remove('animate-fadeInUp');
+                    projectCard.classList.remove('animate-fadeInUp');
                 }
             }
         });
