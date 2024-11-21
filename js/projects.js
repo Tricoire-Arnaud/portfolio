@@ -12,12 +12,22 @@ const projects = {
       "Express",
       "PostgreSQL",
       "EJS",
+      "TensorFlow.js",
       "Bootstrap",
       "Chart.js",
     ],
     description:
-      "Plutus redéfinit la gestion financière personnelle en offrant une expérience utilisateur exceptionnelle. Cette application web innovante combine intelligence artificielle et design intuitif pour transformer la complexité financière en simplicité d'usage. Développée avec passion et expertise technique, elle représente l'aboutissement de ma vision d'une technologie au service de l'utilisateur.",
+      "Plutus redéfinit la gestion financière personnelle en combinant intelligence artificielle et design intuitif. Cette application web innovante utilise le machine learning pour offrir des conseils financiers personnalisés et des prévisions budgétaires précises, transformant la complexité financière en simplicité d'usage.",
     features: [
+      {
+        title: "Intelligence Artificielle & Prédictions",
+        items: [
+          "Conseils financiers personnalisés basés sur l'IA",
+          "Prévisions budgétaires avec TensorFlow.js",
+          "Détection automatique des tendances de dépenses",
+          "Recommandations d'optimisation budgétaire",
+        ],
+      },
       {
         title: "Gestion Financière Intuitive",
         items: [
@@ -40,6 +50,7 @@ const projects = {
     stack: [
       "Node.js et Express pour le backend",
       "PostgreSQL avec Sequelize pour la base de données",
+      "TensorFlow.js pour l'intelligence artificielle",
       "EJS pour le templating",
       "Bootstrap et CSS personnalisé pour l'interface",
       "Chart.js pour les visualisations",
