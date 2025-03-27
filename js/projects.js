@@ -237,6 +237,7 @@ function displayProjects() {
   }
 
   initializeFilters();
+  initializeProjectOverlays();
 }
 
 function initializeFilters() {
@@ -270,4 +271,65 @@ function initializeFilters() {
   }
 }
 
+// Nouvelle fonction pour gérer les clics sur les projets en mobile
+function initializeProjectOverlays() {
+  const projectImages = document.querySelectorAll(".project-image");
+  let activeOverlay = null;
+
+  // Fermer tous les overlays quand on clique ailleurs
+  document.addEventListener("click", function (e) {
+    if (activeOverlay && !e.target.closest(".project-image")) {
+      activeOverlay.classList.remove("show-overlay");
+      activeOverlay = null;
+    }
+  });
+
+  // Gestion du clic sur une image de projet
+  projectImages.forEach((projectImage) => {
+    const overlay = projectImage.querySelector(".project-overlay");
+
+    projectImage.addEventListener("click", function (e) {
+      // Si on clique sur l'image et qu'aucun lien n'est impliqué
+      if (!e.target.closest("a")) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        // Si un autre overlay est déjà ouvert, le fermer
+        if (activeOverlay && activeOverlay !== overlay) {
+          activeOverlay.classList.remove("show-overlay");
+        }
+
+        // Basculer l'état de l'overlay actuel sur mobile
+        if (window.innerWidth <= 768) {
+          if (overlay.classList.contains("show-overlay")) {
+            overlay.classList.remove("show-overlay");
+            activeOverlay = null;
+          } else {
+            overlay.classList.add("show-overlay");
+            activeOverlay = overlay;
+          }
+        }
+      }
+    });
+  });
+
+  // Vérifier l'état initial et adapter aux changements de taille d'écran
+  function checkScreenSize() {
+    if (window.innerWidth > 768) {
+      // Sur desktop, retirer les overlays actifs
+      if (activeOverlay) {
+        activeOverlay.classList.remove("show-overlay");
+        activeOverlay = null;
+      }
+    }
+  }
+
+  // Vérifier au chargement
+  checkScreenSize();
+
+  // Vérifier au redimensionnement
+  window.addEventListener("resize", checkScreenSize);
+}
+
+// Initialiser les projets au chargement de la page
 document.addEventListener("DOMContentLoaded", displayProjects);
